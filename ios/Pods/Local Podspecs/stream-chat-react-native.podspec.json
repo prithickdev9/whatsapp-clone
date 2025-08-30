@@ -1,0 +1,72 @@
+{
+  "name": "stream-chat-react-native",
+  "version": "8.5.0",
+  "summary": "The official React Native SDK for Stream Chat, a service for building chat applications",
+  "homepage": "https://www.npmjs.com/package/stream-chat-react-native",
+  "license": "SEE LICENSE IN LICENSE",
+  "authors": {
+    "company": "Stream.io Inc",
+    "name": "Stream.io Inc"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "./ios",
+    "tag": "8.5.0"
+  },
+  "source_files": "ios/**/*.{h,m,mm}",
+  "dependencies": {
+    "React-Core": [],
+    "React-Codegen": [],
+    "RCT-Folly": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [],
+    "ReactCommon/turbomodule/core": [],
+    "React-RCTFabric": [],
+    "ReactCodegen": [],
+    "ReactCommon/turbomodule/bridging": [],
+    "React-NativeModulesApple": [],
+    "Yoga": [],
+    "React-Fabric": [],
+    "React-graphics": [],
+    "React-utils": [],
+    "React-featureflags": [],
+    "React-debug": [],
+    "React-ImageManager": [],
+    "React-rendererdebug": [],
+    "React-jsi": [],
+    "React-renderercss": [],
+    "hermes-engine": [],
+    "glog": [],
+    "boost": [],
+    "DoubleConversion": [],
+    "fast_float": [],
+    "fmt": [],
+    "SocketRocket": [],
+    "RCT-Folly/Fabric": []
+  },
+  "ios": {
+    "frameworks": [
+      "AssetsLibrary",
+      "MobileCoreServices"
+    ]
+  },
+  "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -DRCT_NEW_ARCH_ENABLED=1  -DRCT_NEW_ARCH_ENABLED=1",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": [
+      "\"$(PODS_ROOT)/boost\"",
+      "\"$(PODS_ROOT)/Headers/Private/Yoga\"",
+      "$(PODS_ROOT)/glog",
+      "$(PODS_ROOT)/boost",
+      "$(PODS_ROOT)/DoubleConversion",
+      "$(PODS_ROOT)/fast_float/include",
+      "$(PODS_ROOT)/fmt/include",
+      "$(PODS_ROOT)/SocketRocket",
+      "$(PODS_ROOT)/RCT-Folly"
+    ],
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DRCT_NEW_ARCH_ENABLED=1 ",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
+  }
+}

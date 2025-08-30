@@ -1,0 +1,1 @@
+../../../../../node_modules/stream-chat-react-native/ios/StreamChatReactNative.h
